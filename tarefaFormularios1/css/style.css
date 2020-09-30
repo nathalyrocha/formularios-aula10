@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  background-color: rgb(251, 253, 255);
+  box-shadow: 0 0 1em rgba(156, 192, 202, 0.692);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+div {
+  margin: 10px 0;
+  padding: 0;
+}
+
+p {
+  background-color: rgba(188, 217, 226, 0.301);
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.dados-formulario {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 189, 189);
+  padding: 5px;
+}
+
+.btn {
+  background-color: rgba(74, 118, 131, 0.301) !important;
+}
+
+.btn:hover{
+  transition: 1s;
+  background-color: rgba(46, 79, 90, 0.664) !important;
+}

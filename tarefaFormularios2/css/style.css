@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#form, #form2 {
+  background-color: rgb(251, 253, 255);
+  box-shadow: 0 0 1em rgba(156, 192, 202, 0.692);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+div {
+  margin: 10px 0;
+  padding: 0;
+}
+
+h2 {
+  background-color: rgba(188, 217, 226, 0.301);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#password, #passwordConfirmation {
+  width: 99.5%;
+  margin-left: 2px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.reset {
+  padding: 0 !important;
+}
+
+.btn {
+  background-color: rgba(74, 118, 131, 0.301) !important;
+}
+
+.form-check-input {
+  margin-left: 10px !important;
+}

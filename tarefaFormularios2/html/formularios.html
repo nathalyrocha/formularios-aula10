@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </head>
+
+  <body id="fundo">
+    <div class="container">
+      <form id="form" onsubmit="validar()">
+        <div class="form-group">
+          <h2>Personal Data</h2>
+          <div class="col-12 reset">
+            <input 
+              id="firstName"
+              class="form-control" 
+              name="nome" 
+              placeholder="First Name" 
+            />
+          </div>
+
+          <div class="col-12 reset">
+            <input 
+              id="lastName"
+              class="form-control" 
+              name="sobrenome" 
+              placeholder="Last Name" 
+            />
+          </div>
+          
+          <div class="row">
+            <div class="col-6 reset">
+              <input 
+              id="password" 
+              class="form-control" 
+              name="password" 
+              placeholder="Password">
+            </div>
+  
+            <div class="col-6 reset">
+              <input 
+              id="passwordConfirmation"
+               class="form-control" 
+               name="password-confirmation"
+                placeholder="Password Confirmation">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group" >
+          <h2>Gender</h2>
+          <div class="form-check-inline">
+            <input id="female" class="form-check-input" type="radio" name="gender" value="female">
+            <label class="form-check-label" for="exampleRadios1">
+              Female
+            </label>
+
+            <input id="male" class="form-check-input" type="radio" name="gender" value="male">
+            <label class="form-check-label" for="exampleRadios2">
+              Male
+            </label>
+
+            <input id="other" class="form-check-input" type="radio" name="gender" value="other">
+            <label class="form-check-label" for="exampleRadios3">
+              Other
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h2>Do you want to receive notifications from this site?</h2>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label" for="defaultCheck1">
+              Yes
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h2>Coments</h2>
+          <textarea class="form-control" id="coments" rows="3"></textarea>
+        </div>
+
+        <div class="col-auto">
+          <input type="submit" class="btn" />
+          <input type="button" class="btn" onclick="limpar()" value="Clear"/>
+          <input type="button" class="btn" onclick="ocultar()" value="Hider"/>
+        </div>
+
+      </form>
+
+      <form id="form2" style="display: none;"></form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
